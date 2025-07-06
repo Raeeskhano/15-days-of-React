@@ -1,0 +1,22 @@
+.todo-container {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin: 10px 4px;
+}
+
+button {
+  min-width: 80px;
+}
+
+.col-4 {
+  text-align: left;
+}
