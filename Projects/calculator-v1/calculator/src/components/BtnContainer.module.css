@@ -1,0 +1,14 @@
+.BtnContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.Btn {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px 8px;
+  height: 60px;
+  width: 60px;
+}
