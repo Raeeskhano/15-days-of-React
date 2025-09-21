@@ -9,7 +9,7 @@ function App() {
 
   const passwordRef = useRef(null);
 
-  //passGenerator function
+  //passGenerator function & useCallback hook to memeoiz function
   const passGenerator = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -30,7 +30,7 @@ function App() {
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
-  //useEffect to call passGenerator function when any dependency changes
+  //useEffect hook to call passGenerator function when any dependency changes
   useEffect(() => {
     passGenerator();
   }, [length, numberAllowed, charAllowed, passGenerator]);
