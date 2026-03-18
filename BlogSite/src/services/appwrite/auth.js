@@ -1,4 +1,4 @@
-import config from "../../config/config";
+import config from "../../config/config.js";
 
 import { Client, Account, ID } from "appwrite";
 
@@ -51,7 +51,6 @@ export class AuthService {
     } catch (error) {
       throw error;
     }
-    return null;
   }
 
   async logOut() {
@@ -61,7 +60,6 @@ export class AuthService {
       throw error;
     }
   }
-  
 }
 
 const authService = new AuthService();
