@@ -27,7 +27,7 @@ const App = () => {
     <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
       <div className="w-full block">
         <Header />
-        <main>{/* <Outlet /> */}</main>
+        <main className="h-[90vh] bg-gray-500">{/* <Outlet /> */}</main>
         <Footer />
       </div>
     </div>

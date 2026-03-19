@@ -41,7 +41,7 @@ export class AuthService {
       });
       return session;
     } catch (error) {
-      throw error;
+      console.log("issue while logining", error);
     }
   }
 
@@ -49,7 +49,7 @@ export class AuthService {
     try {
       return await this.Account.get();
     } catch (error) {
-      throw error;
+      console.log("user not login", error);
     }
   }
 
